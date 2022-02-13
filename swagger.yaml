@@ -21,9 +21,9 @@ paths:
             schema:
               $ref: "#/components/schemas/RegisterRequest"
             example:
-              name: lkoscak
-              email: lkoscak@gmail.com
-              password: "123456"
+              name: user
+              email: user@user.com
+              password: "secret"
         required: true
       responses:
         "200":
@@ -45,8 +45,8 @@ paths:
             schema:
               $ref: "#/components/schemas/LoginRequest"
             example:
-              email: lkoscak10@gmail.com
-              password: "123456"
+              email: user@user.com
+              password: "secret"
         required: true
       responses:
         "200":
@@ -91,11 +91,11 @@ paths:
             schema:
               $ref: "#/components/schemas/CreatajobRequest"
             example:
-              company: Meta
-              position: Intern
+              company: "Company name"
+              position: "Position"
         required: true
       responses:
-        "200":
+        "201":
           description: ""
           headers: {}
       deprecated: false
@@ -135,8 +135,8 @@ paths:
             schema:
               $ref: "#/components/schemas/UpdatejobRequest"
             example:
-              company: Amazon
-              position: Intern
+              company: "Update company name"
+              position: "Update position"
         required: true
       responses:
         "200":
@@ -175,9 +175,9 @@ components:
         password:
           type: string
       example:
-        name: lkoscak
-        email: lkoscak@gmail.com
-        password: "123456"
+        name: user
+        email: user@user.com
+        password: "secret"
     LoginRequest:
       title: LoginRequest
       required:
@@ -190,8 +190,8 @@ components:
         password:
           type: string
       example:
-        email: lkoscak10@gmail.com
-        password: "123456"
+        email: user@user.com
+        password: "secret"
     CreatajobRequest:
       title: CreatajobRequest
       required:
@@ -204,8 +204,8 @@ components:
         position:
           type: string
       example:
-        company: Meta
-        position: Intern
+        company: "Company name"
+        position: "Position"
     UpdatejobRequest:
       title: UpdatejobRequest
       required:
@@ -218,8 +218,8 @@ components:
         position:
           type: string
       example:
-        company: Amazon
-        position: Intern
+        company: "Update company name"
+        position: "Update position"
   securitySchemes:
     bearer:
       type: http
