@@ -99,6 +99,8 @@ paths:
           description: ""
           headers: {}
       deprecated: false
+      security:
+        - bearer: []
   /jobs/{id}:
     parameters:
       - in: path
