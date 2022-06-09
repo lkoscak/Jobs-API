@@ -3,6 +3,7 @@ require("express-async-errors");
 const express = require("express");
 const app = express();
 const connectDB = require("./db/connect");
+const fileUpload = require("express-file-upload");
 
 // error handler
 const notFoundMiddleware = require("./middleware/not-found");
