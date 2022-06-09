@@ -4,7 +4,7 @@ Node/Express API with implemented authentication and CRUD operations.
 
 ## Swagger documentation - [Swagger](https://jobs-api-17996.herokuapp.com/api-docs/#/)
 
-![Preview](./screenshoot.png)
+![Preview](./Screenshoot.png)
 
 #### Run The App Locally
 
